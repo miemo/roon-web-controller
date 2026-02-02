@@ -98,10 +98,17 @@
     }    
 }
 
+#isPlaying{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
 #containerCoverImage {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: width 300ms ease-in;
 }
 
 #colorBackground {
@@ -129,7 +136,12 @@
     flex-direction: column;
     justify-content: center;
     overflow-x: hidden;
+    transition: width 300ms ease-in, opacity 200ms ease-in; overflow: hidden;
 }
+
+/* Expanded cover */
+.cover-expanded #containerCoverImage { width: 100%; }
+.cover-expanded #containerMusicInfo  { width: 0%; opacity: 0; pointer-events: none; }
 
 .lineMusicInfo {
     margin-bottom: 1%;
@@ -359,4 +371,48 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
     background: #7578ff;
+}
+
+
+@media screen and (orientation: landscape) and (min-width: 900px) {
+  /* iPad / large tablet landscape */
+
+    #containerCoverImage {
+        width: 69%;
+    }
+
+    #containerMusicInfo {
+        width: 29%;
+    }
+
+    .itemImage {
+        max-width: 97%;
+        max-height: 97%;
+    }
+
+
+    #line1 {
+        height: 4%;
+    }
+
+    #line2, #line3 {
+        height: 3%;
+    }
+
+    #controlsPlayer {
+        height: 15%;
+    }
+
+    .playerButton {
+        width: 20%;
+    }
+
+    #controlsSettings {
+        height: 10%;
+    }
+
+    .settingsButton {
+        width: 14%;
+    }
+
 }

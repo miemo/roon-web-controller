@@ -1,9 +1,14 @@
-# Roon Web Controller 1.2.13.1
+# Roon Web Controller 1.2.13.2
 
 This is an extension for the Roon music player that provides a web based remote.
 
 NOTE: this is the final release of the 1.x series.
 
+
+## 1.2.13.2 update (on top of the .1 fork below)
+
+- Tapping the cover image now hides the controls and just shows the cover art. Another tap reverts back to default layout.
+- Changed the landscape iPad styles to better suit the larger display
 
 ## About the 1.2.13.1 version
 

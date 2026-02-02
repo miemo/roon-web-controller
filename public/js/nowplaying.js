@@ -10,7 +10,14 @@ var inVolumeSlider = false;
 $(document).ready(function() {
   showPage();
   fixFontSize();
+  enableCoverToggle();
 });
+
+function enableCoverToggle() {
+$("#containerCoverImage").on("click", function () {
+    $("body").toggleClass("cover-expanded");
+  });
+}
 
 function toggleCircleIcon() {
   if ($("#circleIconsSwitch").is(":checked", false)) {

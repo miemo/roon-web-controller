@@ -1,6 +1,12 @@
 # Change Log
 
 
+## Version 1.2.13.2
+
+- Tapping the cover image now hides the controls and just shows the cover art. Another tap reverts back to default layout.
+- Changed the landscape iPad styles to better suit the larger display
+
+
 ## Version 1.2.13.1
 
 Forked from the original repo at https://github.com/pluggemi/roon-web-controller with the following modifications done by Miemo Penttinen:
