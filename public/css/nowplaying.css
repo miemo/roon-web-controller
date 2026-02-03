@@ -59,7 +59,11 @@
         width: 35%; 
         max-width: 3em;
     }    
-}
+
+    /* Expanded cover */
+    .cover-expanded #containerCoverImage { height: 100%; }
+    .cover-expanded #containerMusicInfo  { height: 0%; opacity: 0; pointer-events: none; }    
+    }
 
 @media screen and (orientation:landscape) {
 
@@ -96,6 +100,10 @@
         width: 55%; 
         max-width: 4em;
     }    
+
+    /* Expanded cover */
+    .cover-expanded #containerCoverImage { width: 100%; }
+    .cover-expanded #containerMusicInfo  { width: 0%; opacity: 0; pointer-events: none; }    
 }
 
 #isPlaying{
@@ -108,7 +116,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: width 300ms ease-in;
+    transition: width 300ms ease-in, height 300ms ease-in;
 }
 
 #colorBackground {
@@ -136,12 +144,8 @@
     flex-direction: column;
     justify-content: center;
     overflow-x: hidden;
-    transition: width 300ms ease-in, opacity 200ms ease-in; overflow: hidden;
+    transition: width 300ms ease-in, height 300ms ease-in, opacity 200ms ease-in; overflow: hidden;
 }
-
-/* Expanded cover */
-.cover-expanded #containerCoverImage { width: 100%; }
-.cover-expanded #containerMusicInfo  { width: 0%; opacity: 0; pointer-events: none; }
 
 .lineMusicInfo {
     margin-bottom: 1%;
